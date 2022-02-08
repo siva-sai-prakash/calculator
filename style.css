@@ -1,0 +1,81 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  margin: 1rem 0 0 0;
+  height: 500px;
+  width: 300px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  box-shadow: 3px 3px 40px grey;
+}
+
+/* Input Field */
+
+.input-class {
+  height: 200px;
+}
+.input-class input {
+  width: 100%;
+  padding: 1rem;
+  height: 100%;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #eee;
+  text-align: right;
+  pointer-events: none;
+}
+
+/* Buttons */
+.buttons {
+  margin: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 230, 10, 0.925);
+  border: none;
+  border-radius: 10px;
+  margin: 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 1000;
+  box-shadow: 4px 4px 10px #eee;
+}
+.button-white {
+  background-color: #ddd;
+  color: #000;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.button-red {
+  background-color: rgba(255, 0, 0, 0.815);
+  color: #000;
+}
+.button-green {
+  background-color: rgba(0, 128, 0, 0.897);
+  color: #000;
+}
